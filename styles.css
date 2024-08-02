@@ -1,0 +1,242 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do corpo */
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte para o corpo do texto */
+    line-height: 1.6;
+    background: #e0f7fa; /* Azul claro */
+    color: #333;
+}
+
+/* Container centralizado */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background: #0033a0; /* Azul escuro */
+    color: #fff;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #009739 50%, #ffcc29 50%);
+    opacity: 0.3;
+    z-index: 0;
+}
+
+header .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img {
+    height: 50px; /* Ajuste a altura conforme necessário */
+    width: auto;
+    margin-right: 1rem;
+}
+
+header h1 {
+    font-family: 'Roboto Slab', serif; /* Fonte para o título */
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #ffcc29; /* Amarelo */
+    color: #0033a0; /* Azul escuro */
+}
+
+/* Estilos principais */
+main {
+    padding: 2rem 0;
+}
+
+section {
+    background: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* Títulos das seções */
+section h2 {
+    font-family: 'Roboto Slab', serif; /* Fonte para os títulos das seções */
+    margin-bottom: 1rem;
+    color: #0033a0; /* Azul escuro */
+}
+
+/* Estilos do botão */
+button {
+    background: #009739; /* Verde */
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #007a2f; /* Verde escuro */
+}
+
+/* Formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #0033a0; /* Azul escuro */
+}
+
+form input,
+form textarea {
+    margin-top: 0.25rem;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 150px; /* Ajuste a altura mínima conforme necessário */
+}
+
+form button {
+    margin-top: 1rem;
+    align-self: flex-start;
+}
+
+/* Estilos do rodapé */
+footer {
+    background: #0033a0; /* Azul escuro */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Esconder elementos */
+.hidden {
+    display: none;
+}
+
+/* Estilos para a seção de regulamentações */
+#regulamentacoes {
+    background: #f9f9f9; /* Cor de fundo leve */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+#regulamentacoes h2 {
+    font-family: 'Roboto Slab', serif; /* Fonte para os títulos */
+    margin-bottom: 1rem;
+    color: #0033a0; /* Azul escuro */
+}
+
+#regulamentacoes ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+}
+
+#regulamentacoes ul li {
+    margin-bottom: 0.5rem;
+}
+
+#regulamentacoes a {
+    color: #0033a0; /* Azul escuro */
+    text-decoration: none;
+}
+
+#regulamentacoes a:hover {
+    text-decoration: underline;
+}
+/* Estilos para a seção de legislação */
+#legislacao {
+    background: #fff; /* Branco */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px; /* Ajuste conforme necessário */
+    margin: 0 auto;
+}
+
+#legislacao h2 {
+    font-family: 'Roboto Slab', serif; /* Fonte para os títulos */
+    margin-bottom: 1rem;
+    color: #0033a0; /* Azul escuro */
+}
+
+#legislacao ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+}
+
+#legislacao ul li {
+    margin-bottom: 0.5rem;
+}
+
+#legislacao a {
+    color: #0033a0; /* Azul escuro */
+    text-decoration: none;
+}
+
+#legislacao a:hover {
+    text-decoration: underline;
+}

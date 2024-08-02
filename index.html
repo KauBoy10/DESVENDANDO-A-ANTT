@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site ANTT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="antt1.png" alt="Logo ANTT">
+            </div>
+            <h1>Agência Nacional de Transportes Terrestres (ANTT)</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#regulaçoes">Regulações</a></li>
+                    <li><a href="#legislaçao">Legislação</a></li>
+                    <li><a href="#contato">Contato</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <div class="container">
+                <h2>Sobre a ANTT</h2>
+                <p>A ANTT é uma autarquia federal vinculada ao Ministério da Infraestrutura, responsável pela regulamentação e fiscalização do setor de transportes terrestres no Brasil.</p>
+                <button id="moreInfoBtn">Saiba mais</button>
+                <p id="moreInfo" class="hidden">A ANTT atua na regulação e fiscalização dos serviços de transporte rodoviário, ferroviário e aquaviário, garantindo a segurança e a qualidade dos serviços prestados.</p>
+            </div>
+        </section>
+
+        <section id="servicos">
+            <div class="container">
+                <h2>Serviços</h2>
+                <ul>
+                    <li>Fiscalização de transportes</li>
+                    <li>Regulação de tarifas</li>
+                    <li>Emissão de permissões e licenças</li>
+                </ul>
+            </div>
+        </section>
+
+                <section id="regulamentaçoes">
+                    <div class="container">
+                        <h2>Regulamentações da ANTT</h2>
+                        <p>A ANTT estabelece regras e regulamentações para o setor de transportes terrestres, incluindo o transporte de cargas especiais. Algumas das principais resoluções incluem:</p>
+                        <ul>
+                            <li><a href="https://www.antt.gov.br/antt/legislacao/resolucoes/3056-2009" target="_blank">Resolução ANTT nº 3.056/2009 - Transporte de Produtos Perigosos</a></li>
+                            <li><a href="https://www.antt.gov.br/antt/legislacao/resolucoes/5947-2021" target="_blank">Resolução ANTT nº 5.947/2021 - Transporte de Cargas Especiais</a></li>
+                        </ul>
+                        <p>Para mais informações, visite o <a href="http://www.antt.gov.br" target="_blank">site oficial da ANTT</a>.</p>
+                    </div>
+                </section>   
+                <section id="legislaçao">
+                    <div class="container">
+                        <h2>Legislação e Regulamentações sobre Cargas Especiais</h2>
+                        <p>A regulamentação do transporte de cargas especiais é regida por diversas normas e leis no Brasil. Abaixo estão algumas das principais:</p>
+                        <ul>
+                            <li><a href="https://www.antt.gov.br/antt/legislacao/resolucoes/3056-2009" target="_blank">Resolução ANTT nº 3.056/2009 - Transporte de Produtos Perigosos</a></li>
+                            <li><a href="https://www.antt.gov.br/antt/legislacao/resolucoes/5947-2021" target="_blank">Resolução ANTT nº 5.947/2021 - Transporte de Cargas Especiais</a></li>
+                            <li><a href="http://www.planalto.gov.br/ccivil_03/leis/l9503.htm" target="_blank">Código de Trânsito Brasileiro - Lei nº 9.503/1997</a></li>
+                            <li><a href="https://www.planalto.gov.br/ccivil_03/_Ato2007-2010/2012/Lei/L12619.htm" target="_blank">Lei nº 12.619/2012 - Regulamenta a Profissão do Motorista</a></li>
+                            <li><a href="http://www.planalto.gov.br/ccivil_03/decreto/2002/D4556.htm" target="_blank">Decreto nº 4.556/2002 - Transporte de Produtos Perigosos</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="contato">
+                    <div class="container">
+                        <h2>Contato</h2>
+                        <form id="contactForm">
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" name="name" required>
+                            
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            
+                            <label for="message">Mensagem:</label>
+                            <textarea id="message" name="message" required></textarea>
+                            
+                            <button type="submit">Enviar</button>
+                        </form>
+                             
+                <div id="formResponse" class="hidden"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Site ANTT. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
